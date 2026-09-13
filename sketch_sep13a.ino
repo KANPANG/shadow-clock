@@ -26,9 +26,6 @@ digitalWrite(TRIG, HIGH);
 digitalWrite(LEDPIN, HIGH);
 delayMicroseconds(12);
 digitalWrite(TRIG, LOW);
-
-13
-
 digitalWrite(LEDPIN, LOW);
 return pulseIn(ECHO, HIGH, 60000UL); //60 ms timeout
 }
@@ -62,9 +59,6 @@ shiftOut(DATA, CLOCK, MSBFIRST, leds[i]);
 digitalWrite(LATCH, HIGH);
 }
 void setLED(int index, bool on)
-
-14
-
 {
 int chip = index / 8;
 int bit = index % 8;
@@ -96,9 +90,6 @@ if (now - lastTickMs >= 1000UL)
 {
 unsigned long elapsed = (now - lastTickMs) / 1000UL; // full sec
 lastTickMs += elapsed * 1000UL;
-
-15
-
 s += (int)elapsed;
 if (s >= 60) { m += s / 60; s %= 60; }
 if (m >= 60) { h += m / 60; m %= 60; }
@@ -128,9 +119,6 @@ tickClock();
 long d = readDistanceMed3();
 //shows when ≈ 7 cm
 const float targetCm = 7.0;
-
-16
-
 const float tol = 1.0;
 bool active = (d > 0) && (d >= targetCm - tol) && (d <= targetCm + tol);
 // Testing output
