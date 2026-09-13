@@ -1,12 +1,12 @@
 **ShadowPlay Clock**
 An Arduino-based interactive clock that uses **light, shadows, and sensor detection** to display the current time.
 
-Overview
+## Overview
 - The ShadowPlay Clock combines the concept of a traditional sundial with a modern analog clock. Instead of using physical clock hands or a digital display, the device uses **coloured LEDs and the user's finger as a shadow-casting object** to represent the hour, minute, and second.
 - The system activates when a user's finger is detected approximately **7 cm** from the clock face. An Arduino Uno processes the sensor input, calculates the corresponding clock positions, and controls **36 LEDs** to create the appropriate shadows.
 - This project was independently designed and built as a Computer Engineering project.
 
-How It Works
+## How It Works
 The clock uses three coloured light sources to represent the three hands:
 
 * 🔵 **Blue light** — hour hand
