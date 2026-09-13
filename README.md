@@ -146,5 +146,6 @@ The project achieved the original goal of creating an interactive clock that dis
 
 ## Author
 **Chloe Pang**
+**Alary Sivaprakash**
 Computer Engineering Project
 2025–2026
